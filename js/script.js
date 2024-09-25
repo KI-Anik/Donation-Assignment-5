@@ -34,7 +34,7 @@ function donate(donationId, donationName) {
   
     // Deduct amount from balance
     balance -= donationAmount;
-    document.getElementById('balance').innerText = balance.toFixed(2);
+    document.getElementById('balance').innerText = Number(balance.toFixed(2));
   
     // Update total donation for the card
     const currentAmount = parseFloat(amountElement.innerText);
